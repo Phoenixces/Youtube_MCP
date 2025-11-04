@@ -128,8 +128,12 @@ This pattern generalizes to countless “small but effective” dev automations.
 - To Install claude code CLI: `npm install -g @anthropic-ai/claude-code`
 - Setup Anthropic API Key: `claude config set api_key <your-api-key>`
 - To Add MCP Server: 
+```bash
 claude mcp add --transport stdio YouTube -- \
   uv --directory <ABSOLUTE_PATH_TO_THIS_DIR> run server.py
+```
 - To View all MCPs in claude:
-  > claude mcp list 
+```bash
+claude mcp list 
+```
 - Start new claude session with cmd: `claude`, and ask anything related to youtube summarization, for eg: Summarize vid and put in md file
